@@ -1,0 +1,229 @@
+/* Resetting default margin and padding for various elements */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* General styling for the body */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Styling for the header */
+header {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+header div{
+    width:auto;
+    height: 100px;
+    flex:1;
+}
+/* Styling for the logo/image in the header */
+header div img {
+    width: auto;
+    height: 100%;
+}
+
+/* Styling for the navigation menu */
+header nav menu{
+    list-style: none;
+    display: flex;
+    margin:0px;
+}
+header nav menu li {
+    padding: 15px;
+}
+
+header li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main content styling */
+main {
+    flex: 1;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Styling for sections within the main content */
+section {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 20px;
+}
+
+/* Styling for the login section */
+.login {
+    background-color: #f4f4f4;
+    max-width: 200px;
+    align-items: center;
+}
+
+.login h3 {
+    color: #333;
+}
+
+.login a {
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #3498db;
+}
+
+/* Styling for the login form section */
+.loginform {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+    margin: auto;
+}
+
+.loginform p {
+    margin-bottom: 25px;
+}
+
+/* Styling for forms */
+form {
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #3498db;
+    color: #fff;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #2185c5;
+}
+
+/* Styling for restricted content */
+.restricted {
+    margin-top: 20px;
+}
+
+.restricted img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.restricted img:hover {
+    transform: scale(1.1); /* Increase the size on hover */
+}
+
+/* Styling for logout link */
+.logout a {
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #e74c3c;
+}
+
+/* Styling for the footer */
+footer {
+    margin-top: auto;
+    padding: 20px;
+}
+header div{
+    width:auto;
+    height: 100px;
+    flex:1;
+}
+footer nav menu{
+    display: flex;
+}
+footer nav menu li {
+    list-style: none;
+    margin-right: 15px;
+    color: #333333;
+}
+
+footer nav a {
+    text-decoration: none;
+    color: #333333;
+    font-weight: bold;
+}
+
+footer nav a:hover {
+    text-decoration: underline;
+}
+/*making responsive*/
+@media only screen and (max-width: 600px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header div {
+        margin-bottom: 10px;
+    }
+    header div img {
+        width: 50%;
+        height: auto;
+    }
+    header nav menu {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header nav menu li {
+        margin: 0;
+        padding: 10px;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    section {
+        margin: 10px;
+    }
+
+    .loginform {
+        max-width: 100%;
+    }
+    footer div menu li{
+        font-size: 8px;
+    }
+
+}
